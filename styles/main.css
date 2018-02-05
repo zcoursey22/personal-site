@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5vw;
+  background-color: white;
+  z-index: 100;
+}
+
+.header img {
+  position: absolute;
+  top: 0.75vw;
+  left: 7.5vw;
+}
+
+img.logo {
+  width: 15vw;
+}
+
+.header a {
+  margin: 0.5vw;
+  padding: .5vw 2.5vw;
+  border: 0.15vw solid white;
+  font-size: 1vw;
+}
+.header a:hover {
+  border: 0.15vw solid #464;
+}
+.header .active {
+  border: 0.15vw solid #464;
+}
+
+.header ul {
+  text-align: right;
+  margin: 1.3vw 2vw;
+  margin-right: 7vw;
+  line-height: 2.2vw;
+}
+
+.header li {
+  display: inline;
+}
+
+#homeLink li {
+  color: #797;
+}
+#aboutLink li {
+  color: #686;
+}
+#projectsLink li {
+  color: #575;
+}
+#contactLink li {
+  color: #464;
+}
+#blogLink li {
+  color: #353;
+}
+
+
+.content {
+  width: 100%;
+  background-color: #111;
+  margin: 0 auto;
+  padding-top: 5vw;
+}
+
+.image {
+  background-image: url("../images/foggyForest.jpg");
+  background-size: cover;
+  padding: 0.4vw 0;
+}
+
+.content img {
+  width: 30vw;
+  display: block;
+  margin: 2vw auto;
+  border-radius: 50%;
+  border: 0.5vw solid white;
+}
+
+.bio {
+  display: block;
+  width: 75%;
+  margin: 1vw auto;
+  position: relative;
+  margin-bottom: 3vw;
+}
+.bio > img {
+  position: relative;
+  top: 1vw;
+  width: 23vw;
+  float: left;
+  margin: 2vw;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: 0.5vw solid white;
+}
+.bio > span {
+  float: none;
+  position: relative;
+  width: 30vw;
+  color: #8a8;
+  text-align: left;
+  font-size: 2vw;
+  top: 1vw;
+  margin-bottom: 1vw;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.content h1 {
+  color: #353;
+  text-align: center;
+  font-size: 3vw;
+  margin-top: 1vw;
+}
+
+.content h2 {
+  color: #575;
+  text-align: center;
+  font-size: 2vw;
+}
+
+span.lightning {
+  color: white;
+}
+
+.content p {
+  color: #8a8;
+  text-align: center;
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+}
+
+.wrapper {
+  width: 60vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2vw;
+  grid-auto-rows: minmax(20vw, auto);
+}
+.wrapper > div {
+  border: 0.5vw solid white;
+  background-color: #444;
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2;
+}
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
+.five {
+  grid-column: 1;
+  grid-row: 3;
+}
+.six {
+  grid-column: 2;
+  grid-row: 3;
+}
+.seven {
+  grid-column: 1;
+  grid-row: 4;
+}
+.eight {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+form {
+  padding-bottom: 0.5vw;
+}
+input {
+  display: block;
+  margin: 1vw auto;
+  width: 20vw;
+  font-size: 1.25vw;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+  padding: 0.5vw;
+}
+.name {
+  width: 16vw;
+}
+.submit {
+  width: 8vw;
+}
+textarea {
+  display: block;
+  margin: 1vw auto;
+  width: 30vw;
+  height: 10vw;
+  font-size: 1.25vw;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+  padding: 0.5vw;
+}
+
+
+.footer {
+  background-color: #white;
+  text-align: center;
+  padding: 1vw;
+}
+
+.footer img {
+  width: 2.75vw;
+  display: inline;
+}
+
+p.copyright {
+  color: #333;
+  margin-top: 0.5vw;
+  font-size: 1vw;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (orientation: portrait) {
+  .footer {
+    background-color: #white;
+    text-align: center;
+    padding: 2vw;
+  }
+
+  .footer img {
+    width: 9vw;
+    display: inline;
+  }
+
+  p.copyright {
+    color: #333;
+    margin-top: 0.5vw;
+    font-size: 3.5vw;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+  }
+}
