@@ -3,9 +3,9 @@
   <head>
     <title>Zach Coursey</title>
     <link href="styles/main.css" type="text/css" rel="stylesheet">
-    <link src="scripts/main.js">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+    <meta name='viewport' content='width=device-width'>
   </head>
   <body>
     <div class="header">
@@ -22,14 +22,14 @@
       <br>
       <h1>Zach Coursey</h1>
       <h2><span class="lightning">&#128498;</span> Full-Stack Web Developer <span class="lightning">&#128498;</span></h2>
-      <br><br><br>
-      <p style="font-size:1.75vw;">
+      <div class="lineBreaks"><br><br><br></div>
+      <p class="contactP">
         Let me hear from you!
       </p>
-      <form action="#" method="POST">
-        <input class="name" type="text" name="name" placeholder="Name...">
-        <input type="email" name="_replyto" placeholder="Email...">
-        <textarea name="message" placeholder="Your message..."></textarea>
+      <form name="contactForm" action="https://formspree.io/zcoursey22@gmail.com" onsubmit="return validateForm()" method="POST">
+        <input class="name" type="text" name="name" placeholder="Name..." onfocus="turnWhite(this)">
+        <input class="email" type="email" name="_replyto" placeholder="Email..." onfocus="turnWhite(this)">
+        <textarea class="message" name="message" placeholder="Your message..." onfocus="turnWhite(this)"></textarea>
         <input class="submit" type="submit" value="Send">
       </form>
       <br>
@@ -43,5 +43,8 @@
       <a href="#"><img src="images/icons/linkedin0.png"></a>
       <p class="copyright">&copy 2018 Zach Coursey. All rights reserved.</p>
     </div>
+
+    <script src="scripts/main.js"></script>
+
   </body>
 </html>
