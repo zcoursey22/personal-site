@@ -78,8 +78,8 @@ img.logo {
 }
 
 .image {
-  /*background-image: url("../images/foggyForest.jpg");*/
-  background: #333;
+  background-image: url("../images/foggyForest.jpg");
+  /*background: #333;*/
   background-size: cover;
   padding: 0.4vw 0;
 }
@@ -153,11 +153,25 @@ span.lightning {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2vw;
-  grid-auto-rows: minmax(25vw, auto);
+  grid-auto-rows: minmax(25vw, 10vw);  /*might change 10vw back to auto*/
 }
 .wrapper > div {
   border: 0.5vw solid white;
-  background-color: #444;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapper > div > img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 .one {
   grid-column: 1;
@@ -190,6 +204,18 @@ span.lightning {
 .eight {
   grid-column: 2;
   grid-row: 4;
+}
+.projectLabel {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 100%;
+  background-color: rgba(255,255,255, 0.5);
+  color: #111;
+  padding: 0.5vw;
+  padding-left: 1.5vw;
+  font-size: 1.5vw;
 }
 
 
@@ -268,15 +294,20 @@ p.copyright {
   }
   .header a {
     margin: 0 -1vw;;
-    padding: 0.5vw 2vw;
+    /*padding: 0.5vw 2vw;
     border: 0.4vw solid white;
-    font-size: 2.25vw;
+    font-size: 2.25vw;*/
+    padding: 0.5vw 1.75vw;
+    border: none;
+    font-size: 2.75vw;
   }
   .header a:hover {
-    border: 0.4vw solid #464;
+    /*border: 0.4vw solid #464;*/
+    border: none;
   }
   .header .active {
-    border: 0.4vw solid #464;
+    /*border: 0.4vw solid #464;*/
+    border: none;
   }
   .header ul {
     text-align: center;
@@ -296,8 +327,8 @@ p.copyright {
     min-height: calc(100vh - 24vw);
   }
   .image {
-    /*background-image: url("../images/foggyForest.jpg");*/
-    background: #333;
+    background-image: url("../images/foggyForest.jpg");
+    /*background: #333;*/
     background-size: cover;
     padding: 0.4vw 0;
   }
@@ -323,6 +354,7 @@ p.copyright {
   }
   span.lightning {
     color: white;
+    font-family: 'Noto Sans', sans-serif;
   }
   .content p {
     width: 85vw;
@@ -370,10 +402,10 @@ p.copyright {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 5vw;
-    grid-auto-rows: minmax(50vw, auto);
+    grid-auto-rows: minmax(50vw, 55vw);  /* Might change 55vw back to auto */
   }
   .wrapper > div {
-    border: 0.5vw solid white;
+    border: 1vw solid white;
     background-color: #444;
   }
   .one {
@@ -407,6 +439,9 @@ p.copyright {
   .eight {
     grid-column: 1;
     grid-row: 8;
+  }
+  .projectLabel {
+    font-size: 3.25vw;
   }
 
 
