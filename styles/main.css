@@ -211,11 +211,13 @@ span.lightning {
   bottom: 0;
   transform: translate(-50%, 0);
   width: 100%;
-  background-color: rgba(255,255,255, 0.5);
+  /*background-color: rgba(255,255,255, 0.5);*/
+  background: linear-gradient(to right, rgba(255,255,255,0.6), rgba(255,255,255,0));
   color: #111;
   padding: 0.5vw;
-  padding-left: 1.5vw;
-  font-size: 1.5vw;
+  padding-left: 2.25vw;
+  font-size: 2.25vw;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 
@@ -441,7 +443,9 @@ p.copyright {
     grid-row: 8;
   }
   .projectLabel {
-    font-size: 3.25vw;
+    padding: 1vw;
+    padding-left: 3vw;
+    font-size: 5vw;
   }
 
 
