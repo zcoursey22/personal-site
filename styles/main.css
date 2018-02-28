@@ -28,7 +28,7 @@ a {
 }
 
 img.logo {
-  width: 14.5vw;
+  height: 5vw;
 }
 
 .header a {
@@ -83,14 +83,12 @@ img.logo {
   padding-top: 5vw;
   min-height: calc(100vh - 13vw);
 }
-
 .image {
   background-image: url("../images/foggyForest.jpg");
   /*background: #333;*/
   background-size: cover;
   padding: 0.4vw 0;
 }
-
 .content img {
   width: 30vw;
   display: block;
@@ -98,30 +96,34 @@ img.logo {
   border-radius: 50%;
   border: 0.5vw solid white;
 }
-
 .content h1 {
   color: #353;
   text-align: center;
   font-size: 3vw;
   margin-top: 1vw;
 }
-
 .content h2 {
   color: #575;
   text-align: center;
   font-size: 2vw;
 }
-
 span.lightning {
   color: white;
 }
-
 .content p {
   color: #8a8;
   text-align: center;
   font-size: 1.5vw;
   padding-top: 1vw;
-  padding-bottom: 1.5vw;
+  padding-bottom: 2.5vw;
+}
+.content a {
+  display: block;
+  text-align: center;
+  font-size: 2vw;
+  color: #d33939;
+  text-decoration: underline;
+  padding-bottom: 1vw;
 }
 
 
@@ -381,7 +383,10 @@ p.copyright {
     margin: 0 auto;
     text-align: center;
     font-size: 3vw;
-    padding-bottom: 1vw;
+  }
+  .content a {
+    font-size: 3.5vw;
+    padding-top: 4vw;
   }
 
 
